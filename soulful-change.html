@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soulful Change | Kelly Ann Rayne · ESSEE Life Design™</title>
+<!--
+  GO HIGH LEVEL NOTES
+  - Paste everything between the GHL START and GHL END markers into a Custom HTML/Code element
+    (or use the whole file in a blank page). All CSS is scoped under .kar so it won't clash with GHL styles.
+  - Replace every IMAGE placeholder (search "IMAGE:") with the final photography URLs.
+  - Replace every LINK placeholder (search "#reserve-") with the GHL calendar / checkout / order-form links.
+  - Items marked [CONFIRM] are details still to be confirmed by Kelly Ann before publishing.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body style="margin:0">
+<!-- GHL START -->
+<style>
+.kar{--cream:#F6F1EA;--sand:#EAE0D2;--stone:#D9CBB8;--espresso:#3B2826;--plum:#4A2F33;--ink:#2B2220;--muted:#6E605A;--gold:#B08D57;--white:#FFFDF9;
+  font-family:'Jost',system-ui,sans-serif;font-weight:300;color:var(--ink);background:var(--cream);line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased}
+.kar *{box-sizing:border-box}
+.kar h1,.kar h2,.kar h3,.kar .serif{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;line-height:1.15;margin:0;color:inherit}
+.kar em{font-style:italic}
+.kar p{margin:0 0 1.1em}
+.kar a{color:inherit}
+.kar .wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+.kar .narrow{max-width:720px;margin:0 auto}
+.kar .center{text-align:center}
+.kar .eyebrow{font-size:12px;letter-spacing:.28em;text-transform:uppercase;font-weight:400;color:var(--gold);margin-bottom:18px;display:block}
+.kar .rule{width:56px;height:1px;background:var(--gold);margin:26px auto;border:0}
+.kar .btn{display:inline-block;font-family:'Jost',sans-serif;font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:400;text-decoration:none;padding:16px 34px;border-radius:999px;transition:all .25s ease;cursor:pointer}
+.kar .btn-light{background:var(--white);color:var(--espresso);border:1px solid var(--white)}
+.kar .btn-light:hover{background:transparent;color:var(--white)}
+.kar .btn-dark{background:var(--espresso);color:var(--white);border:1px solid var(--espresso)}
+.kar .btn-dark:hover{background:transparent;color:var(--espresso)}
+.kar .btn-ghost{background:transparent;color:var(--espresso);border:1px solid var(--espresso)}
+.kar .btn-ghost:hover{background:var(--espresso);color:var(--white)}
+.kar .textlink{font-size:13px;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:4px}
+
+/* announcement + nav */
+.kar .announce{background:var(--plum);color:var(--sand);text-align:center;font-size:12.5px;letter-spacing:.08em;padding:10px 20px}
+.kar .announce a{color:var(--white);text-decoration:underline;text-underline-offset:3px}
+.kar .nav{background:var(--cream);border-bottom:1px solid var(--stone)}
+.kar .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:78px}
+.kar .logo{font-family:'Cormorant Garamond',serif;font-size:22px;letter-spacing:.22em;text-transform:uppercase;text-decoration:none;color:var(--espresso);line-height:1.1}
+.kar .logo small{display:block;font-family:'Jost',sans-serif;font-size:9.5px;letter-spacing:.32em;color:var(--muted);margin-top:3px}
+.kar .nav ul{list-style:none;display:flex;gap:30px;margin:0;padding:0}
+.kar .nav ul a{font-size:12px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;color:var(--ink)}
+.kar .nav ul a:hover,.kar .nav ul a.active{color:var(--gold)}
+.kar .nav .btn{padding:11px 22px;font-size:11.5px}
+
+/* hero */
+.kar .hero{position:relative;min-height:clamp(600px,88vh,900px);display:flex;align-items:center;justify-content:center;text-align:center;color:var(--white);overflow:hidden;
+  background:linear-gradient(rgba(43,30,28,.52),rgba(43,30,28,.62)),
+  /* IMAGE: hero photo (wide, warm light — Kelly Ann leading a group / women in conversation) */
+  url('https://placehold.co/2000x1200/8a7464/8a7464?text=+') center/cover no-repeat}
+.kar .hero .inner{max-width:820px;padding:120px 28px}
+.kar .hero .eyebrow{color:var(--sand)}
+.kar .hero h1{font-size:clamp(52px,8vw,96px);letter-spacing:.01em;margin-bottom:18px}
+.kar .hero .sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(24px,3vw,32px);margin-bottom:28px;color:var(--sand)}
+.kar .hero p.lead{font-size:18px;max-width:640px;margin:0 auto 1.2em;color:#F1E9DF}
+.kar .hero .tag{font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;margin:34px 0 36px;color:var(--sand)}
+.kar .hero .tag b{display:block;font-weight:400;color:var(--white);margin-bottom:6px}
+
+/* sections */
+.kar section{padding:110px 0}
+.kar .bg-sand{background:var(--sand)}
+.kar .bg-dark{background:var(--plum);color:var(--sand)}
+.kar .bg-dark h2{color:var(--white)}
+.kar h2{font-size:clamp(36px,4.6vw,54px);margin-bottom:26px}
+.kar h2 em{color:var(--gold)}
+.kar .split{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch}
+.kar .split .img{min-height:560px;background:var(--stone) center/cover no-repeat}
+.kar .split .txt{padding:90px 70px;display:flex;flex-direction:column;justify-content:center;background:var(--white)}
+.kar .split .txt p{color:var(--muted)}
+.kar .questions{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:50px 0 10px}
+.kar .q{background:var(--white);border:1px solid var(--stone);border-radius:14px;padding:38px 28px;text-align:center}
+.kar .q .serif{font-size:27px;font-style:italic;color:var(--espresso)}
+.kar .q span{display:block;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-top:14px}
+.kar .twocol{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:20px}
+.kar .twocol h3{font-size:30px;margin-bottom:16px;color:var(--espresso)}
+.kar .twocol p{color:var(--muted)}
+.kar .pull{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(26px,3vw,34px);line-height:1.35;color:var(--espresso);margin:60px auto 0;max-width:760px}
+.kar .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(234,224,210,.18);border:1px solid rgba(234,224,210,.18);border-radius:14px;overflow:hidden;margin:56px 0 50px}
+.kar .pillar{background:var(--plum);padding:42px 30px;text-align:center}
+.kar .pillar .num{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--gold);font-size:22px;display:block;margin-bottom:10px}
+.kar .pillar h3{font-size:28px;color:var(--white);margin-bottom:10px}
+.kar .pillar p{font-size:15px;margin:0;color:#D8CABB}
+
+/* dates */
+.kar .dates{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;max-width:860px;margin:50px auto 0}
+.kar .date-card{background:var(--white);border:1px solid var(--stone);border-radius:16px;padding:44px 36px;text-align:center}
+.kar .date-card .day{font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold)}
+.kar .date-card .date{font-family:'Cormorant Garamond',serif;font-size:clamp(30px,3.4vw,38px);white-space:nowrap;color:var(--espresso);margin:8px 0 6px}
+.kar .date-card .meta{font-size:15px;color:var(--muted);margin-bottom:26px}
+.kar .date-card .price{font-family:'Cormorant Garamond',serif;font-size:30px;color:var(--espresso);display:block;margin-bottom:22px}
+.kar .fine{font-size:14px;color:var(--muted);margin-top:34px}
+
+/* ecosystem */
+.kar .eco{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:50px}
+.kar .tier{background:var(--white);border:1px solid var(--stone);border-radius:14px;padding:30px 20px;text-align:center;display:flex;flex-direction:column}
+.kar .tier.current{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold) inset}
+.kar .tier .t{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.kar .tier h3{font-size:24px;color:var(--espresso);margin-bottom:10px}
+.kar .tier p{font-size:14px;color:var(--muted);flex:1}
+.kar .tier a{font-size:11px;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;color:var(--espresso);border-bottom:1px solid var(--gold);padding-bottom:3px;align-self:center}
+.kar .badge{display:inline-block;font-size:10px;letter-spacing:.2em;text-transform:uppercase;background:var(--sand);color:var(--muted);padding:5px 12px;border-radius:999px;align-self:center}
+
+/* final cta */
+.kar .final{position:relative;color:var(--white);text-align:center;
+  background:linear-gradient(rgba(43,30,28,.62),rgba(43,30,28,.72)),
+  /* IMAGE: soft, atmospheric image (nature / candlelight / journal) */
+  url('https://placehold.co/2000x1000/6b5547/6b5547?text=+') center/cover no-repeat}
+.kar .final .serif.big{font-size:clamp(34px,4.4vw,52px);font-style:italic;margin-bottom:22px}
+.kar .final p{color:var(--sand)}
+
+/* footer */
+.kar footer{background:var(--espresso);color:#CDBFAF;padding:80px 0 40px;font-size:14px}
+.kar footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:50px}
+.kar footer .logo{color:var(--white)}
+.kar footer .logo small{color:#B9A999}
+.kar footer h4{font-family:'Jost',sans-serif;font-weight:400;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin:0 0 18px}
+.kar footer ul{list-style:none;margin:0;padding:0}
+.kar footer li{margin-bottom:10px}
+.kar footer a{text-decoration:none}
+.kar footer a:hover{color:var(--white)}
+.kar footer .base{border-top:1px solid rgba(255,255,255,.12);margin-top:60px;padding-top:26px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12.5px;letter-spacing:.06em}
+
+@media (max-width:980px){
+  .kar .nav ul{display:none}
+  .kar .split{grid-template-columns:1fr}
+  .kar .split .img{min-height:380px}
+  .kar .split .txt{padding:64px 30px}
+  .kar .eco{grid-template-columns:1fr 1fr}
+  .kar .questions,.kar .pillars{grid-template-columns:1fr}
+}
+@media (max-width:680px){
+  .kar{font-size:16px}
+  .kar section{padding:80px 0}
+  .kar .twocol,.kar .dates,.kar .eco,.kar footer .cols{grid-template-columns:1fr}
+  .kar .twocol{gap:30px}
+  .kar .logo{font-size:18px}
+}
+</style>
+
+<div class="kar">
+
+  <!-- Announcement bar -->
+  <div class="announce">Soulful Change · Saturday, November 21 &amp; Saturday, December 5 &nbsp;—&nbsp; <a href="#dates">Reserve your place</a></div>
+
+  <!-- Navigation (remove if using the GHL site header) -->
+  <header class="nav">
+    <div class="wrap">
+      <a class="logo" href="/">Kelly Ann Rayne<small>ESSEE Life Design™</small></a>
+      <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/soulful-change" class="active">Soulful Change</a></li>
+        <li><a href="/bridges-of-love">Bridges of Love</a></li>
+        <li><a href="/#experiences">Experiences</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+      <a class="btn btn-dark" href="#dates">Reserve</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="inner">
+      <span class="eyebrow">A One-Day Live Event with Kelly Ann Rayne</span>
+      <h1>Soulful Change</h1>
+      <div class="sub">Get clear. Make a decision. Know how to move forward.</div>
+      <p class="lead">When a relationship, a difficult decision, or an unexpected change is consuming your thoughts, it can take over how you experience your life.</p>
+      <p class="lead">Soulful Change helps you understand what’s keeping you stuck, get clear about what you want, and leave with a practical next step you feel confident taking.</p>
+      <div class="tag"><b>Build momentum in a new direction.</b>Strategically · Intuitively · Confidently</div>
+      <a class="btn btn-light" href="#dates">Reserve your place →</a>
+    </div>
+  </div>
+
+  <!-- READY FOR CHANGE -->
+  <div class="split">
+    <!-- IMAGE: Kelly Ann portrait (warm, natural light) -->
+    <div class="img" style="background-image:url('https://placehold.co/1200x1400/cbb9a4/cbb9a4?text=+')"></div>
+    <div class="txt">
+      <span class="eyebrow">Enrich · ESSEE Life Design™</span>
+      <h2>You’re ready for something <em>to change.</em></h2>
+      <p>You’ve thought about it. Replayed the conversations. Considered your options. Asked yourself what you should do.</p>
+      <p>And you keep coming back to the same questions.</p>
+    </div>
+  </div>
+
+  <!-- THE QUESTIONS -->
+  <section class="bg-sand">
+    <div class="wrap">
+      <div class="narrow center">
+        <span class="eyebrow">The questions on repeat</span>
+        <h2>Which way <em>forward?</em></h2>
+      </div>
+      <div class="questions">
+        <div class="q"><div class="serif">Do I stay or leave?</div><span>Decision</span></div>
+        <div class="q"><div class="serif">Hold on or let go?</div><span>Release</span></div>
+        <div class="q"><div class="serif">Keep trying—or choose something different?</div><span>Direction</span></div>
+      </div>
+
+      <div class="twocol">
+        <div>
+          <h3>What you may be navigating</h3>
+          <p>Maybe you’re navigating heartbreak, betrayal, loss, illness, burnout, or a changing relationship.</p>
+          <p>Maybe life has become a constant response to what everyone else needs—and your own goals keep getting pushed aside.</p>
+        </div>
+        <div>
+          <h3>What you want instead</h3>
+          <p>You want to feel confident in your decisions. Have energy for the things you enjoy. Look ahead and feel excited about something again.</p>
+          <p>That begins with understanding what needs to change—and what you can do about it.</p>
+        </div>
+      </div>
+
+      <p class="pull center">“Knowing something needs to change isn’t the same as knowing how to change it.”</p>
+    </div>
+  </section>
+
+  <!-- THE DAY -->
+  <section class="bg-dark">
+    <div class="wrap">
+      <div class="narrow center">
+        <span class="eyebrow">The day</span>
+        <h2>Bring what you’re navigating. <em>Leave with a way forward.</em></h2>
+        <p>Soulful Change is a focused day of practical teaching, guided reflection, and meaningful conversation led by Kelly Ann Rayne.</p>
+      </div>
+      <div class="pillars">
+        <div class="pillar"><span class="num">i.</span><h3>Practical teaching</h3><p>Understand what may be keeping you stuck and what is within your control.</p></div>
+        <div class="pillar"><span class="num">ii.</span><h3>Guided reflection</h3><p>Get clear about what you want and what matters most to you now.</p></div>
+        <div class="pillar"><span class="num">iii.</span><h3>Meaningful conversation</h3><p>Leave with a practical next step you feel confident taking.</p></div>
+      </div>
+      <div class="center"><a class="btn btn-light" href="#dates">Reserve your place →</a></div>
+    </div>
+  </section>
+
+  <!-- DATES -->
+  <section id="dates">
+    <div class="wrap">
+      <div class="narrow center">
+        <span class="eyebrow">Upcoming dates</span>
+        <h2>Reserve <em>your place</em></h2>
+        <p style="color:var(--muted)">A one-day live event with Kelly Ann Rayne. Choose the date that suits you.</p>
+      </div>
+      <div class="dates">
+        <div class="date-card">
+          <div class="day">Saturday</div>
+          <div class="date">November 21, 2026</div>
+          <div class="meta">[CONFIRM: time] · [CONFIRM: location]</div>
+          <span class="price">$136</span>
+          <!-- LINK: GHL checkout / calendar for Nov 21 -->
+          <a class="btn btn-dark" href="#reserve-nov21">Reserve your place →</a>
+        </div>
+        <div class="date-card">
+          <div class="day">Saturday</div>
+          <div class="date">December 5, 2026</div>
+          <div class="meta">[CONFIRM: time] · [CONFIRM: location]</div>
+          <span class="price">$136</span>
+          <!-- LINK: GHL checkout / calendar for Dec 5 -->
+          <a class="btn btn-dark" href="#reserve-dec5">Reserve your place →</a>
+        </div>
+      </div>
+      <p class="fine center">Places are limited to keep the day intimate and focused.</p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS — hidden until Kelly Ann supplies approved client words.
+  <section class="bg-sand">
+    <div class="wrap center">
+      <span class="eyebrow">Kind words</span>
+      <h2>From women who <em>attended</em></h2>
+      ... add approved testimonials with agreed attribution ...
+    </div>
+  </section>
+  -->
+
+  <!-- ESSEE ECOSYSTEM -->
+  <section class="bg-sand">
+    <div class="wrap">
+      <div class="narrow center">
+        <span class="eyebrow">ESSEE Life Design™</span>
+        <h2>Choose the experience <em>that fits</em></h2>
+        <p style="color:var(--muted)">Soulful Change is one of Kelly Ann’s Enrich experiences—a place to begin seeing things differently. Each experience stands on its own; choose what fits where you are now.</p>
+      </div>
+      <div class="eco">
+        <div class="tier current"><div class="t">Enrich</div><h3>Soulful Change &amp; Bridges of Love</h3><p>One-day retreats offering fresh perspective and a useful next step.</p><a href="/bridges-of-love">Bridges of Love</a></div>
+        <div class="tier"><div class="t">Sustain</div><h3>Ascension</h3><p>A three-month programme supporting lasting change.</p><a href="#ascension-interest">Interest list</a></div>
+        <div class="tier"><div class="t">SOAR</div><h3>Butterfly in a Box™</h3><p>A Stillness Retreat at The Cabin in Pleasant Valley.</p><a href="#soar-interest">Interest list</a></div>
+        <div class="tier"><div class="t">Explore</div><h3>Life Design</h3><p>An extraordinary destination experience for the year ahead.</p><span class="badge">Coming soon</span></div>
+        <div class="tier"><div class="t">Elevate</div><h3>One-to-One Coaching</h3><p>Personalized support for what matters most.</p><span class="badge">Coming soon</span></div>
+      </div>
+      <p class="fine center">Interested in working privately with Kelly Ann? <a class="textlink" href="#apply-coaching">Apply for private coaching</a></p>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final">
+    <div class="wrap narrow">
+      <div class="serif big">You may not always get to choose what happens. But you can choose how you navigate what happens next.</div>
+      <hr class="rule">
+      <p>Make yourself a priority.</p>
+      <br>
+      <a class="btn btn-light" href="#dates">Reserve your place →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER (remove if using the GHL site footer) -->
+  <footer>
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <a class="logo" href="/">Kelly Ann Rayne<small>ESSEE Life Design™</small></a>
+          <p style="margin-top:22px;max-width:340px">Navigate change. Strategically. Intuitively. Confidently.<br>Build Momentum in a New Direction.</p>
+        </div>
+        <div>
+          <h4>Experiences</h4>
+          <ul>
+            <li><a href="/soulful-change">Soulful Change</a></li>
+            <li><a href="/bridges-of-love">Bridges of Love</a></li>
+            <li><a href="#ascension-interest">Ascension</a></li>
+            <li><a href="#soar-interest">Butterfly in a Box™</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="/about">About Kelly Ann</a></li>
+            <li><a href="#apply-coaching">Private coaching</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="base"><span>© 2026 Kelly Ann Rayne · ESSEE Life Design™</span><span>Make yourself a priority.</span></div>
+    </div>
+  </footer>
+
+</div>
+<!-- GHL END -->
+</body>
+</html>
